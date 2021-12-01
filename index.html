@@ -16,33 +16,41 @@
 </head>
 <body>
     <div class="card-container">
-    <div class="header"><h1>Månad Budget</h1></div>
-    <div class="form-area">  
-    <select name="" id="select-area" required>
-        <option value="väljer">Väljer</option>
-        <option value="+">+ /inkomst</option>
-        <option value="-">- /kostnad</option>
-    </select>
-
-    <input type="description" class="desc" placeholder="Beskriving" required>
-    <input type="number" class="value" placeholder="Value" required>
-    <button class="btn-add">Add</button>
-    </div> 
+        <div class="border-containner">
+        <div class="header" id="earned-summa">
+            <h1>Vinst</h1>
+            <div class="vinst-container">
+                <p class="earn_symbol">kr</p>
+            <div class="vinst-summa"></div>
+            </div>
+        </div>
+         </div>
+        <div class="form-area">  
+        <select name="" id="select-button" required>
+            <option value="väljer">Väljer</option>
+            <option value="+">+ /inkomst</option>
+            <option value="-">- /kostnad</option>
+        </select>
+        
+            <input type="description" class="desc" placeholder="Beskriving" required>
+            <input type="number" class="value" placeholder="Value" required>
+            <button class="btn-add" id="push">Add</button>
+        
+        </div>
+         
 
     <div class="list-container">
 
-        <div class="inkomst-list"><h2>Inkomst</h2>
-            
+        <div class="list" id="inkomst"><h2>Inkomst (kr)</h2>
             <div class="inkomst-container"></div>
+            <div class="item-inkomst"></div>
         </div>   
 
-        <div class="kostnad-list"><h2>Kostnad</h2>
+        <div class="list" id="kostnad"><h2>Kostnad (kr)</h2>
              <div class="kostnad-container"></div>
         </div> 
 
-        <div class="vinst"><h2>Vinst</h2>
-            <div class="vinst-summa"></div>
-        </div>
+        
     </div>
     </div>
 </body>

@@ -1,0 +1,148 @@
+* *:before *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-color;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $body-bg;
+}
+h2 {
+  font-family: $montserrat;
+}
+.card-container {
+  margin: 25px;
+  width: 550px;
+  height: 100vh;
+  outline: $background-color;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $vinst-list;
+  padding: 10px;
+  margin-top: 20%;
+  border: 2px solid $list-color;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: $montserrat;
+  box-shadow: 0 0 10px $font-color;
+}
+
+.earn_symbol .vinst-summa {
+  padding-left: 10px;
+}
+.form-area {
+  padding: 15px;
+}
+#select-button {
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  font-family: $montserrat;
+}
+.input-area input {
+  flex-direction: row;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+.desc {
+  padding: 5px;
+  width: 230px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: $font-color;
+  font-family: $montserrat;
+}
+.value {
+  padding: 5px;
+  width: 95px;
+  font-size: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-family: $montserrat;
+}
+.btn-add {
+  font-size: 1rem;
+  width: 50px;
+  padding: 5px;
+  background-color: $btn-color;
+  color: $font-color;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-add:hover {
+  background-color: $box-shadow;
+  color: $font-color;
+}
+.list {
+  background-color: $background-color;
+  width: 200px;
+  height: 60px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: $text-color;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#inkomst h2 {
+  color: $font-color;
+}
+#kostnad {
+  background-color: $kostnad-list;
+}
+#vinst {
+  background-color: $vinst-list;
+}
+.vinst-summa {
+  color: $text-color;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: $font-color;
+  font-weight: 600;
+}
+.listTxt {
+  background-color: $list-color;
+  border: none;
+  border-radius: 5px;
+  font-family: $montserrat;
+  width: 100%;
+  border-bottom: 2px solid $box-shadow;
+  list-style: none;
+}
+li.listTxt {
+  display: flex;
+  justify-content: space-around;
+}
+.inkomst-container .listTxt {
+  border-bottom: 2px solid $vinst-list;
+}
+.far {
+  background-color: $font-color;
+  color: $tash-color;
+  width: 10px;
+  border-bottom: 2px solid $box-shadow;
+  cursor: pointer;
+  outline: none;
+}
